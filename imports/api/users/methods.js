@@ -54,7 +54,6 @@ Meteor.methods({
         let id;
         id = Meteor.users.insert({createdAt: new Date(), emails: [{address: email}], profile: {name: name}, roles});
         if (id) {
-            Roles.addUsersToRoles(id, roles);
             Meteor.call('users.change_password', id, password);
         }
         return true;

@@ -5,7 +5,7 @@ Meteor.startup(() => {
         const users = [{
             name: 'Keyner TYC',
             email: 'keyner.peru@gmail.com',
-            password: '12345', //Set your password
+            password: '12345', // Set your admin password
             roles: ['admin']
         }];
 
@@ -16,12 +16,9 @@ Meteor.startup(() => {
                 password: user.password,
                 profile: {
                     name: user.name
-                }
+                },
+                roles: user.roles
             });
-
-            if (user.roles.length > 0) {
-                Roles.addUsersToRoles(id, user.roles);
-            }
         });
     }
 });

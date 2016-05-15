@@ -27,6 +27,7 @@ Template.users_edit.events({
                 }
             } else {
                 toastr.success('Data saved!');
+                Router.go('/users');
             }
         });
     },
@@ -44,6 +45,7 @@ Template.users_edit.events({
                     toastr.error(error.reason);
                 } else {
                     toastr.success('Password Changed!');
+                    Router.go('/users');
                 }
             });
         }

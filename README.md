@@ -12,5 +12,5 @@ It’s a boilerplate project, designed for getting new projects up and running a
 *   Public and authenticated routing pattern using [Iron Router](https://github.com/iron-meteor/iron-router).
 *   Basic accounts workflow using [accounts-password](http://docs.meteor.com/#/full/accounts_passwords), including: login (Facebook & Twitter Services), logout, recover password, and reset password.
 *   Automatic account creation for an administrator.
-*   A collection of packages for adding additional functionality (Sweet Alert, Toastr, body-events and more...)
+*   A collection of packages for adding additional functionality (Sweet Alert, Toastr, Body-events, Roles and more...)
 

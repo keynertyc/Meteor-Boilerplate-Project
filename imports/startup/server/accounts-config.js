@@ -13,7 +13,6 @@ Accounts.onCreateUser((options, user) => {
 
     if (options.roles) {
         user.roles = options.roles;
-        Roles.addUsersToRoles(user._id, options.roles);
     } else {
         user.roles = ['user'];
     }
