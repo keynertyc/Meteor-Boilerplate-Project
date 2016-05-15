@@ -1,0 +1,22 @@
+<template name="sidebar">
+    <div class="card">
+        <div class="waves-effect waves-block waves-light">
+            <div align="center" style="margin-top: 20px;">
+                {{> avatar user=currentUser shape='circle' size='large'}}
+            </div>
+        </div>
+        <div class="card-content center-align">
+            <span class="activator grey-text text-darken-4">{{currentUser.profile.name}}</span>
+            <p><a href="/users/edit/{{currentUser._id}}">Edit Profile</a></p>
+        </div>
+        <div class="card-action">
+            <ul>
+                {{#if isInRole 'admin'}}
+                    <li><a href="/users/">Users</a></li>
+                {{/if}}
+                <li><a href="#">This is a link</a></li>
+                <li><a href="#">This is a link</a></li>
+            </ul>
+        </div>
+    </div>
+</template>
