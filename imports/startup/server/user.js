@@ -5,7 +5,7 @@ Meteor.startup(() => {
         const users = [{
             name: 'Keyner TYC',
             email: 'keyner.peru@gmail.com',
-            password: '12345', // Set your admin password
+            password: '4dm1n', // Set your admin password
             roles: ['admin']
         }];
 
